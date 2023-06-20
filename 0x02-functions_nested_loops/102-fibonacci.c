@@ -12,7 +12,7 @@ int	main(void)
 	long r;
 	int i = 0;
 
-	while (i <= 50)
+	while (i < 50)
 	{
 		r = n + m;
 		printf("%ld", n);
