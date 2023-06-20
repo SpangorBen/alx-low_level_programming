@@ -22,5 +22,6 @@ int	main(void)
 		m = r;
 		i++;
 	}
+	printf("\n");
 	return (0);
 }
