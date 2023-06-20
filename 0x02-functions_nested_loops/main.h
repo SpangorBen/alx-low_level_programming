@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+int 	_abs(int n);
 int		_islower(int c);
 int		_isalpha(int c);
 int		_putchar(char c);
