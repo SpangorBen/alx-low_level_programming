@@ -10,17 +10,17 @@ int	main(void)
 	int	i = 0;
 	long r;
 	long sum;
-	long m = 2, n = 1;
+	long m = 0, n = 1;
 
 	while (i < 50)
 	{
 		r = n + m;
 		n = m;
 		m = r;
-		if (n % 2 == 0 && n <= 4000000)
-			sum += n;
+		if (r % 2 == 0 && r < 4000000)
+			sum += r;
 		i++;
 	}
-	printf("%ld\n", n);
+	printf("%ld\n", sum);
 	return (0);
 }
