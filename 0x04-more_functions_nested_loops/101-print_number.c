@@ -2,24 +2,24 @@
 
 /**
  * print_number - number
- * @a: number to print
+ * @n: number to print
  * Return: none
 */
 
-void print_number(int a)
+void print_number(int n)
 {
 	int i = 1;
 	int len = 1;
 	int div = 1;
-	int r;
-	long n = a;
+	unsigned int r;
+	unsigned int l = n;
 
 	if (n < 0)
 	{
-		n *= -1;
+		l *= -n;
 		_putchar('-');
 	}
-	r = n;
+	r = l;
 	while (r >= 10)
 	{
 		len++;
@@ -32,8 +32,8 @@ void print_number(int a)
 	}
 	while (div > 1)
 	{
-		_putchar((n / div) % 10 + '0');
+		_putchar((l / div) % 10 + '0');
 		div /= 10;
 	}
-	_putchar(n % 10 + '0');
+	_putchar(l % 10 + '0');
 }
