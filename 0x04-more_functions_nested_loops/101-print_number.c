@@ -6,12 +6,13 @@
  * Return: none
 */
 
-void print_number(int n)
+void print_number(int a)
 {
 	int i = 1;
 	int len = 1;
 	int div = 1;
 	int r;
+	long n = a;
 
 	if (n < 0)
 	{
