@@ -8,32 +8,19 @@
 
 void print_number(int n)
 {
-	int i = 1;
-	int len = 1;
-	int div = 1;
-	unsigned int r;
-	unsigned int l = n;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		l *= -n;
+		n1 = -n;
 		_putchar('-');
-	}
-	r = l;
-	while (r >= 10)
+	} else
 	{
-		len++;
-		r /= 10;
+		n1 = n;
 	}
-	while (i < len)
+	if (n1 / 10)
 	{
-		div *= 10;
-		i++;
+		print_number(n1 / 10);
 	}
-	while (div > 1)
-	{
-		_putchar((l / div) % 10 + '0');
-		div /= 10;
-	}
-	_putchar(l % 10 + '0');
+	_putchar((n1 % 10) + '0');
 }
