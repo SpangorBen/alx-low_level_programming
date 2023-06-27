@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int r;
+	int r = 0;
 	int si = 1;
 
 	if (s[i] == '-')
@@ -19,7 +19,7 @@ int _atoi(char *s)
 	}
 	while (s[i])
 	{
-		r = r * 10 + s[i] - '0';
+		r = r * 10 + (s[i] - '0');
 		i++;
 	}
 	return (r * si);
