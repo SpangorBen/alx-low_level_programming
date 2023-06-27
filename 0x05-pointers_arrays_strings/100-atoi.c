@@ -13,8 +13,10 @@ int _atoi(char *s)
 	int si = 1;
 
 	if (s[i] == '-')
+	{
 		si = -1;
-	i++;
+		i++;
+	}
 	while (s[i])
 	{
 		r = r * 10 + s[i] - '0';
