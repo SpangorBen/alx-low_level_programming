@@ -9,5 +9,19 @@
 
 void set_string(char **s, char *to)
 {
-	*s = to;
+	if (to == NULL)
+		return;
+	if (!to)
+	{
+		free(to);
+		to = NULL;
+	}
+	if (!to)
+	{
+		*s = malloc(1024);
+		while (to)
+		{
+			*s++ = to++;
+		}
+	}
 }
