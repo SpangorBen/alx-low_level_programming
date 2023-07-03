@@ -19,9 +19,5 @@ void set_string(char **s, char *to)
 	if (!to)
 	{
 		*s = malloc(1024);
-		while (to)
-		{
-			*s++ = to++;
-		}
-	}
+		strcpy(*s, to);
 }
