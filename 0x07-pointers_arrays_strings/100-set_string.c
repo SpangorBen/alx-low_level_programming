@@ -9,15 +9,15 @@
 
 void set_string(char **s, char *to)
 {
-	if (to == NULL)
+	if (*s == NULL)
 		return;
-	if (!to)
+	if (!*s)
 	{
 		free(to);
 		to = NULL;
 	}
-	if (!to)
+	if (!*s)
 	{
-		*s = malloc(1024);
-		strcpy(*s, to);
+		to = malloc(1024);
+		strcpy(to, *s);
 }
