@@ -2,13 +2,13 @@
 
 /**
  * main - main
- * @argc: Number of command line arguments
- * @argv: arrays
+ * @ac: Number of command line arguments
+ * @av: arrays
  * Return: always 0
 */
 
-int main(int argc, char **argv)
+int main(int ac, char **av)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", av[ac * 0]);
 	return (0);
 }
