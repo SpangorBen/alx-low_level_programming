@@ -3,7 +3,7 @@
 /**
  * *create_array - array
  * @size: size of the array
- * @c: character in the array
+ * @c: character in the new array
  * Return: the array
 */
 
