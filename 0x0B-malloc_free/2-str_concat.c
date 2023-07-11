@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		l1++;
 	while (s2)
 		l2++;
-	buffer = malloc(l1 + l2 + 1);
+	buffer = malloc((l1 + l2 + 1) * sizeof(char));
 	if (!buffer)
 		return (NULL);
 	while (s1)
